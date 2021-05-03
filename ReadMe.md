@@ -1,14 +1,14 @@
 ## Lawformer
 
-#### Introduction
-This repository provides the source code and checkpoints of the paper "Lawformer: A Pre-trained Language Model forChinese Legal Long Documents". 
+### Introduction
+This repository provides the source code and checkpoints of the paper "Lawformer: A Pre-trained Language Model forChinese Legal Long Documents". You can download the checkpoint from the huggingface model hub or from (here)[https://data.thunlp.org/legal/Lawformer.zip].
 
-#### Installation
+### Installation
 ```
 pip install -r requirements.txt
 ```
 
-#### Easy Start
+### Easy Start
 We have uploaded our model to the huggingface model hub. Make sure you have installed transformers.
 ```python
 >>> from transformers import AutoModel, AutoTokenizer
@@ -18,7 +18,7 @@ We have uploaded our model to the huggingface model hub. Make sure you have inst
 >>> outputs = model(**inputs)
 ```
 
-#### Pre-training
+### Pre-training
 We pre-train Lawformer continuously from `hfl/chinese-roberta-wwm-ext`. Therefore, we first convert the RoBERTa model to the Longformer by running the following command:
 ```
 python3 convert_roberta_lfm.py
@@ -28,7 +28,7 @@ Then run the following command to pre-train the model:
 python3 -m torch.distributed.launch --master_port 10086 --nproc_per_node 8 train.py -c config/Lawformer.config -g 0,1,2,3,4,5,6,7
 ```
 
-#### Cite
+### Cite
 If you use the pre-trained models, please cite this paper:
 ```
 @article{xiao2021lawformer,
