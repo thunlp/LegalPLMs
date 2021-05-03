@@ -1,7 +1,7 @@
 ## Lawformer
 
 ### Introduction
-This repository provides the source code and checkpoints of the paper "Lawformer: A Pre-trained Language Model forChinese Legal Long Documents". You can download the checkpoint from the huggingface model hub or from (here)[https://data.thunlp.org/legal/Lawformer.zip].
+This repository provides the source code and checkpoints of the paper "Lawformer: A Pre-trained Language Model forChinese Legal Long Documents". You can download the checkpoint from the huggingface model hub or from [here](https://data.thunlp.org/legal/Lawformer.zip).
 
 ### Installation
 ```
