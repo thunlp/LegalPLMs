@@ -3,6 +3,8 @@
 ### Introduction
 This repository provides the source code and checkpoints of the paper "Lawformer: A Pre-trained Language Model for Chinese Legal Long Documents". You can download the checkpoint of Lawformer from the [huggingface model hub](https://huggingface.co/xcjthu/Lawformer) or from [here](https://data.thunlp.org/legal/Lawformer.zip). Besides, the checkpoint of our baseline model, Legal RoBERTa, can be downloaded from [here](https://data.thunlp.org/legal/LegalRoBERTa.zip).
 
+The new judgement prediction dataset, CAIL-Long, can be downloaded from [here](https://data.thunlp.org/legal/CAIL-Long.tar.gz).
+
 ### Installation
 ```
 pip install -r requirements.txt
